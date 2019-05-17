@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="./JS/react.development.js"></script>
+<script src="./JS/react-dom.development.js"></script>
+<script src="./JS/babel.min.js"></script>
+<link rel="stylesheet" href="./css/first.css">
+
+<body>
+        <label for="ipt">点击</label>
+        <input type="text">
+        <hr>
+        <div id="app"></div>
+    <script type="text/babel">
+    ReactDOM.render(
+        <div>
+            <h1 className="pink">学习react很快乐</h1>
+            <h2 style={{backgroundColor:"pink"}}>学习react不快乐</h2>
+            <h3>{3+6*5}</h3>
+            <label htmlFor="ipt">点击</label>
+            <input type="text" id="ipt" />
+        </div>,
+        document.getElementById('app')
+    )
+</script>
+</body>
+
+</html>
